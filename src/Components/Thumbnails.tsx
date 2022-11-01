@@ -8,9 +8,11 @@ import thumbnailImage4 from "../assets/images/image-product-4-thumbnail.jpg"
 const Thumbnails = ({
 	selectImageFromThumbnail,
 	indexActiveImage,
+	isInsideLightBox,
 }: {
 	selectImageFromThumbnail: (index: number) => void
 	indexActiveImage: number
+	isInsideLightBox: boolean
 }) => {
 	const thumbnailsImage = [
 		thumbnailImage1,
@@ -19,7 +21,11 @@ const Thumbnails = ({
 		thumbnailImage4,
 	]
 	return (
-		<div className={clsx("flex space-x-8")}>
+		<div
+			className={clsx(
+				" hidden space-x-8 md:flex",
+				isInsideLightBox ? "px-8" : "px-0"
+			)}>
 			{thumbnailsImage.map((thumbnail, index) => (
 				<div
 					className="relative mt-6 cursor-pointer overflow-hidden"
@@ -28,7 +34,7 @@ const Thumbnails = ({
 					<img src={thumbnail} className=" rounded-xl"></img>
 					<span
 						className={clsx(
-							"absolute inset-0 rounded-xl hover:border-2 hover:border-orange hover:bg-lightGrayishBlue/70",
+							"absolute inset-0 rounded-xl  hover:bg-lightGrayishBlue/70",
 							indexActiveImage === index
 								? "border-2 border-orange bg-lightGrayishBlue/70"
 								: ""

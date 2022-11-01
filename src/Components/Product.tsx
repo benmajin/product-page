@@ -8,10 +8,10 @@ import ProductImage from "./ProductImage"
 
 const Product = () => {
 	return (
-		<div className="mx-auto max-w-screen-xl md:flex md:items-center md:px-10 md:py-12">
+		<div className="mx-auto max-w-screen-xl md:flex md:items-center md:px-10 md:py-10">
 			<ProductImage isInsideLightBox={false} />
 
-			<div className="space-y-3 p-4 md:w-4/5 md:space-y-6 md:px-20 md:py-0">
+			<div className="space-y-3 p-4 md:w-4/5 md:space-y-6 md:px-5 md:py-0 lg:px-20">
 				<div className="text-xs font-bold uppercase text-orange">
 					Sneaker Company
 				</div>
@@ -32,7 +32,7 @@ const Product = () => {
 						$250.00
 					</div>
 				</div>
-				<div className="sm:flex sm:space-x-4 ">
+				<div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4 ">
 					<QuantityInput />
 					<ButtonAddToCart />
 				</div>
