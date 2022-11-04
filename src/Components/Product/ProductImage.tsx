@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 
-import { images } from "../utils/images"
+import { images } from "../../utils/images"
 
-import Thumbnails from "./Thumbnails"
-import LightBox from "./LightBox"
+import Thumbnails from "../ui/Product/Thumbnails"
+import LightBox from "../ui/Product/LightBox"
 import CarouselControl from "./CarouselControl"
-import ActiveImage from "./ActiveImage"
-import useIsWindowSmall from "../Hooks/useIsWindowSmall"
+import ActiveImage from "../ui/Product/ActiveImage"
+import useIsWindowSmall from "../../Hooks/useIsWindowSmall"
 
 const ProductImage = ({ isInsideLightBox }: { isInsideLightBox: boolean }) => {
 	const [indexActiveImage, setIndexActiveImage] = useState<number>(0)
@@ -40,7 +40,7 @@ const ProductImage = ({ isInsideLightBox }: { isInsideLightBox: boolean }) => {
 	}
 	return (
 		<>
-			<div className="relative w-full  ">
+			<div className="relative w-full overflow-hidden md:max-w-sm">
 				<ActiveImage
 					handleLightBoxOpening={handleLightBoxOpening}
 					indexActiveImage={indexActiveImage}

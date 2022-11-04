@@ -1,8 +1,8 @@
 import React from "react"
-import ButtonControlCarousel from "./ButtonControlCarousel"
-import IconNext from "../assets/images/icon-next.svg"
-import IconPrev from "../assets/images/icon-previous.svg"
-import useIsWindowSmall from "../Hooks/useIsWindowSmall"
+import ButtonControlCarousel from "../ui/Product/ButtonControlCarousel"
+import IconNext from "../../assets/images/icon-next.svg"
+import IconPrev from "../../assets/images/icon-previous.svg"
+import useIsWindowSmall from "../../Hooks/useIsWindowSmall"
 
 const CarouselControl = ({
 	showPreviousImage,

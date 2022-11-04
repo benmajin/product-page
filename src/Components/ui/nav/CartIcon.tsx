@@ -1,5 +1,5 @@
 import React from "react"
-import useCart from "../Hooks/useCart"
+import useCart from "../../../Hooks/useCart"
 
 type PropsType = {
 	setIsCartDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>

@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import React, { useState } from "react"
-import iconClose from "../assets/images/icon-close.svg"
+import iconClose from "../../../assets/images/icon-close.svg"
 import NavLinks from "./NavLinks"
 
 const MobileMenu = ({

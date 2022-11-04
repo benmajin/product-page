@@ -1,11 +1,11 @@
 import React, { useState } from "react"
 
-import DiscountBadge from "./DiscountBadge"
+import DiscountBadge from "../ui/Product/DiscountBadge"
 import QuantityInput from "./QuantityInput"
-import ButtonAddToCart from "./ButtonAddToCart"
+import ButtonAddToCart from "../ui/Product/ButtonAddToCart"
 
 import ProductImage from "./ProductImage"
-import useCart from "../Hooks/useCart"
+import useCart from "../../Hooks/useCart"
 
 const Product = () => {
 	const [quantity, setQuantity] = useState(0)

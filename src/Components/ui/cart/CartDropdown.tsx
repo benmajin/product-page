@@ -1,5 +1,5 @@
 import React from "react"
-import useCart from "../Hooks/useCart"
+import useCart from "../../../Hooks/useCart"
 import Cartitems from "./CartItems"
 import EmptyCart from "./EmptyCart"
 

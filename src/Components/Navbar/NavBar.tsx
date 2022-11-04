@@ -1,11 +1,11 @@
 import React, { useState } from "react"
-import MobileMenu from "./MobileMenu"
-import NavLinks from "./NavLinks"
-import CartIcon from "./CartIcon"
-import NavAvatar from "./NavAvatar"
-import BurgerIcon from "./BurgerIcon"
-import Brand from "./Brand"
-import CartDropdown from "./CartDropdown"
+import MobileMenu from "../ui/nav/MobileMenu"
+import NavLinks from "../ui/nav/NavLinks"
+import CartIcon from "../ui/nav/CartIcon"
+import NavAvatar from "../ui/nav/NavAvatar"
+import BurgerIcon from "../ui/nav/BurgerIcon"
+import Brand from "../ui/nav/Brand"
+import CartDropdown from "../ui/cart/CartDropdown"
 
 const NavBar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)

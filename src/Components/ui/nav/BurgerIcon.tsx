@@ -1,5 +1,5 @@
 import React from "react"
-import iconMenu from "../assets/images/icon-menu.svg"
+import iconMenu from "../../../assets/images/icon-menu.svg"
 
 const BurgerIcon = ({
 	setIsMenuOpen,

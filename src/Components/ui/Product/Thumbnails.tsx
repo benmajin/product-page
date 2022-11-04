@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import React from "react"
-import { thumbnailsImage } from "../utils/images"
+import { thumbnailsImage } from "../../../utils/images"
 
 const Thumbnails = ({
 	selectImageFromThumbnail,

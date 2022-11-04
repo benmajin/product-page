@@ -1,5 +1,5 @@
 import React from "react"
-import imageAvatar from "../assets/images/image-avatar.png"
+import imageAvatar from "../../../assets/images/image-avatar.png"
 
 const NavAvatar = () => {
 	return (

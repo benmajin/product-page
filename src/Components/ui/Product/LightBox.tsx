@@ -1,6 +1,6 @@
 import React from "react"
 
-import ProductImage from "./ProductImage"
+import ProductImage from "../../Product/ProductImage"
 const LightBox = ({
 	setIsModalShowing,
 }: {

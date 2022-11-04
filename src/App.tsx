@@ -1,6 +1,6 @@
 import React from "react"
-import NavBar from "./Components/NavBar"
-import Product from "./Components/Product"
+import NavBar from "./Components/Navbar/NavBar"
+import Product from "./Components/Product/Product"
 import CartProvider from "./Context/CartProvider"
 
 const App = () => (

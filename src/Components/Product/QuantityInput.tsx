@@ -21,7 +21,7 @@ const QuantityInput = ({
 	}
 	return (
 		<div className="flex h-12 w-full items-center justify-between rounded-lg bg-lightGrayishBlue px-3 sm:w-2/5">
-			<button>
+			<button type="button">
 				<svg
 					onClick={decreaseQuantity}
 					width="12"
@@ -40,7 +40,7 @@ const QuantityInput = ({
 			</button>
 
 			<span className="font-bold text-veryDarkBlue">{quantity}</span>
-			<button>
+			<button type="button">
 				<svg
 					onClick={increaseQuantity}
 					width="12"
