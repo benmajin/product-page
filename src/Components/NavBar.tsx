@@ -25,7 +25,7 @@ const NavBar = () => {
 					<NavAvatar />
 				</div>
 
-				{isCartDropdownOpen && <CartDropdown />}
+				{isCartDropdownOpen ? <CartDropdown /> : null}
 
 				<MobileMenu setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
 			</div>

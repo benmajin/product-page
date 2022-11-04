@@ -5,13 +5,29 @@ import QuantityInput from "./QuantityInput"
 import ButtonAddToCart from "./ButtonAddToCart"
 
 import ProductImage from "./ProductImage"
+import useCart from "../Hooks/useCart"
 
 const Product = () => {
+	const [quantity, setQuantity] = useState(0)
+	const { setCart } = useCart()
+
+	const handleAddToCart = (e: React.FormEvent) => {
+		e.preventDefault()
+		if (quantity === 0) return
+		setCart([
+			{
+				productName: "Fall Limited Edition Sneakers",
+				price: 125.0,
+				quantity: quantity,
+				totalProduct: quantity * 125.0,
+			},
+		])
+	}
 	return (
 		<div className="mx-auto max-w-screen-xl md:flex md:items-center md:px-10 md:py-10">
 			<ProductImage isInsideLightBox={false} />
 
-			<div className="space-y-3 p-4 md:w-4/5 md:space-y-6 md:px-5 md:py-0 lg:px-20">
+			<div className="mx-auto w-11/12 space-y-3 p-4 md:space-y-6 md:px-4 lg:px-20">
 				<div className="text-xs font-bold uppercase text-orange">
 					Sneaker Company
 				</div>
@@ -32,10 +48,12 @@ const Product = () => {
 						$250.00
 					</div>
 				</div>
-				<div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4 ">
-					<QuantityInput />
+				<form
+					onSubmit={handleAddToCart}
+					className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4 ">
+					<QuantityInput setQuantity={setQuantity} quantity={quantity} />
 					<ButtonAddToCart />
-				</div>
+				</form>
 			</div>
 		</div>
 	)

@@ -7,12 +7,14 @@ const BurgerIcon = ({
 	setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
 }) => {
 	return (
-		<img
-			src={iconMenu}
-			alt="menu icon"
-			className="mt-1 block cursor-pointer md:hidden"
-			onClick={() => setIsMenuOpen((prev) => !prev)}
-		/>
+		<button>
+			<img
+				src={iconMenu}
+				alt="menu icon"
+				className="mt-1 block cursor-pointer md:hidden"
+				onClick={() => setIsMenuOpen((prev) => !prev)}
+			/>
+		</button>
 	)
 }
 

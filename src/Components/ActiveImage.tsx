@@ -11,7 +11,7 @@ const ActiveImage = ({
 	return (
 		<img
 			src={images[indexActiveImage]}
-			className="cursor-pointer object-cover md:rounded-2xl"
+			className="w-full cursor-pointer object-cover md:rounded-2xl"
 			onClick={handleLightBoxOpening}
 		/>
 	)
